@@ -1,0 +1,32 @@
+{
+  "name": "cypressprojtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:clear": "cypress cache clear",
+    "cyrun": "node run.js",
+    "cy:install": "cypress install",
+    "cy:run": "cypress run",
+    "allure:report": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open",
+    "allure:test": "npm run cyrun && npm run allure:report",
+    "allure:serve": "allure serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.1.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.2",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "@cypress/xpath": "^2.0.3",
+    "@shelex/cypress-allure-plugin": "^2.40.2",
+    "allure-commandline": "^2.30.0",
+    "cypress": "^12.17.4",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-xpath": "^2.0.1",
+    "dotenv": "^16.4.5"
+  }
+}
