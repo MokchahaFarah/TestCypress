@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-
     "cy:open": "cypress open",
     "cy:clear": "cypress cache clear",
     "cyrun": "node run.js",
